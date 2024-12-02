@@ -1,0 +1,183 @@
+.background {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* max-width: 1920px;
+    min-width: 1280px; */
+    width: 100%;
+    background: #fff;
+  }
+  
+  .navbar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 75%;
+      height: 10vh;
+      background: #fff;
+      color: #282c34;
+      box-sizing: border-box; /* Umożliwia uwzględnienie paddingu w szerokości */
+  }
+  @media screen and (max-width: 768px){
+    .navbar{
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width: 1921px){
+    .navbar{
+        width: 50%;
+    }
+    
+}
+  .mainWritting{
+      display: flex;
+      justify-content: center;
+      background-color: #214225;
+      width: 100%;
+      height: auto;
+      font-size: 20px;
+      color: white;
+      padding: 20px 0px;
+      font-family: 'Montserrat-Bold';
+      letter-spacing: 0.12em; 
+      font-variant: small-caps;
+  }
+  
+  .title{
+      font-size: 16px;
+      font-family: 'Montserrat-SemiBold';
+      text-transform: uppercase;
+      letter-spacing: 0.25em
+  }
+  
+  .bookmark{
+    font-size: 14px;
+    font-family: 'Montserrat-Medium';
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    padding: 10px 20px;
+    transition: all 0.1s ease;
+}
+
+.bookmark:hover{
+    /* background-color: #ddd; */
+    /* color: white; */
+    /* border-radius: 10px; */
+    text-decoration: underline #214225 1.5px;
+    cursor: pointer;
+    /* box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2); Adds a shadow effect */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+  .bookmark:focus{
+      background-color: #f31919;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  
+  .login{
+      font-size: 14px;
+      font-family: 'Montserrat-Bold';
+      color: white;
+      background-color: #7D9F81;
+      border-radius: 10px;
+      padding: 10px 20px;
+      letter-spacing: 0.25em; 
+      text-transform: uppercase;
+      border: 1px solid #7D9F81;
+     
+    }
+
+    .login:hover{
+        color: #7D9F81;
+        background-color: white;
+        border: 1px solid #7D9F81;
+        cursor: pointer;
+    }
+
+    .bookmarks{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+  
+    .routeTableHeader, .routeTableHeaderContent{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        width: 100%;
+       
+    }
+    .routeTableHeader{
+        
+        justify-content: space-between;
+    }
+
+    .routeTableHeaderContent{
+        background-color: #FFF;
+    }
+
+    .routeTableHeaderContent:hover{
+        background-color: #CCC;
+    }
+
+    .routeNumber, .routeNumberContent, .routeDate, .routeDateContent, .routePath {
+        color: white;
+        font-family: 'Montserrat-Bold';
+        font-size: 16px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .routeNumber, .routePath, .routeDate{
+        background-color: #7D9F81;
+    }
+    
+    .routeNumber, .routeDate{
+        flex: 0 0 auto; 
+    }
+
+    .routeNumberContent, .routeNumber {
+        min-width: 70px;
+        border: #eee 1px solid; 
+    }
+
+    .routeDate, .routeDateContent {
+        min-width: 150px;
+        border: #eee 1px solid; 
+        
+    }
+    
+    .routePath{
+        flex: 1;
+        display: flex;
+        justify-content: center;            
+    }
+
+    .routePathContent, .routeDateContent, .routeNumberContent {
+        color: #282c34;
+    }
+
+    .routePathContent{
+        flex: 1;
+        font-size: 12px;
+        font-family: 'Montserrat-Regular';
+    }
+    
+    .table{
+        padding: 20px 0px;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2px;
+     
+    }
+
+    
+    
